@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PublicaMundi</title>
+    <meta name="description" content="Scalable and Reusable Open GeoSpatial Data">
+    <meta name="author" content="Angelos Tzotsos">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/publicamundi.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+       <!-- <section>
+        <a class="image" href="http://publicamundi.eu" target="_blank">
+          <img width="1200" src="imgs/pm-back.png"></a>
+        </section>-->
+        
+        <section>
+          <h1>PublicaMundi</h1>
+          <h3>Scalable and Reusable Open Geospatial Data</h3>
+          <br/>
+          <br/>
+          <a class="image" href="http://publicamundi.eu" target="_blank">
+          <img width="400" src="imgs/publicamundi_logo_full.png">
+          </a>
+          <p style="color:#005b54;"><small>Presented by <a href="http://users.ntua.gr/tzotsos/">Angelos Tzotsos</a> / <a href="http://twitter.com/tzotsos">@tzotsos</a></small></p>
+          <p style="color:#005b54;"><a href="http://2013.foss4g.org/">Copernicus Big Data Workshop, Brussels 2014</a></p>
+          <!--p><small><i>Press "s" for slide notes.</i></small></p-->
+          <aside class="notes">
+	    <p>Notes</p>
+          </aside>
+        </section>
+        <!-- Introduction slides -->
+        <!--
+        <section>
+          <section>
+            <h2>Open Source Geospatial  Foundation (OSGeo)</h2>
+            <p align="left">Since 2006 A Non Profit Umbrella for:</p>
+            <ul>
+              <li>GeoSpatial Free and Open Source Software</li>
+              <li>Education</li>
+              <li>Open Data</li>
+            </ul>
+            <br/>
+            <img class="image" src="imgs/gnu.png" width="300" alt="GNU" />
+            <aside class="notes">
+              <p>OSGeo-Live derives its name from the Open Source GeoSpatial Foundation, or OSGeo for short.</p>
+              <p>The OSGeo Foundation was set up in 2006 as a non-profit umbrella organisation to support development and promotion of quality GeoSpatial Open Source Software and Open Data.</p>
+            </aside>
+          </section>
+          
+        </section>
+        -->
+      </div>
+    </div>
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+      
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+      
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+              { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+              // { src: 'reveal.js/plugin/leap/leap.js', async: true }
+              // { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+              // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+      });
+      
+    </script>
+  </body>
+</html>
