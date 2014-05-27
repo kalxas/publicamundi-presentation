@@ -282,7 +282,7 @@
             </a>
             </td>
 	    <td style="vertical-align:middle">
-	    <a class="image" href="http://live.osgeo.org" target="_blank">
+	    <a class="image" href="http://kalxas.github.io/OSGeoLive-presentation/#/" target="_blank">
               <!--img width="600" src="imgs/wordle.png"-->
               <img width="400" align="center" src="imgs/osgeolive_menu.png">
             </a></td>
@@ -473,6 +473,205 @@
 
     </section>
 
+    <section>
+	    <section>
+		    <h2>pycsw</h2>
+		    <ul>
+				<li><a href="http://pycsw.org">pycsw</a> is a OGC CSW server implementation written in Python</li>
+				<li><a href="https://github.com/geopython/pycsw">pycsw</a> is an Open Source project released under the MIT license</li>
+		    </ul>
+		    <br/>
+		    <a class="image" href="https://ckanext-spatial.readthedocs.org" target="_blank">
+	        <img width="150" src="imgs/pycsw-logo.png">
+	        </a>
+		</section>
+
+		<section>
+            <h2>What is Metadata?</h2>
+            <p align="left">Metadata is often described as “data about data”, or the who, what, where, and when.</p> 
+            <p align="left">In the geospatial world, for each dataset we maintain, we should record information about the data such as:</p><br/>
+            <ul>
+            <li>general description</li>
+            <li>location</li>
+            <li>usage restrictions</li>
+            <li>projection</li>
+            <li>technical contact</li>
+            <li>time period</li>
+            <li>date created</li>
+            <li>date modified</li>
+            <li>version</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Metadata Standards</h2>
+            <ul>
+            <li>Dublin Core: established a core/common group of 15 metadata elements</li>
+            <li>FGDC CSDGM: approved by the U.S. Federal Geographic Data Committee originally in 1994 and composed of Sections, Compound Elements, Data Elements</li>
+            <li>ISO 19115: International Standards Organization’s TC211 committee created this in 2003 and is composed of more than 400 “Core”, “Mandatory”, and “Optional” elements</li>
+            <li>ISO 19139: The XML implementation schema for ISO 19115 specifying the metadata record format</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>OGC CSW Specification</h2>
+            <p align="left">The Open Geospatial Consortium (OGC) <a href="http://www.opengeospatial.org/standards/specifications/catalog">OpenGIS Catalogue Service Implementation Specification</a>, currently at version 2.0.2, is a standard for discovering and retrieving spatial data and metadata.</p>
+            <p align="left">Catalogue Services for the Web (CSW) is the HTTP protocol binding of the Catalogue Service Implementation Specificaton that allows for publishing and searching of metadata.</p>
+        </section>
+        
+        <section>
+            <h2>CSW Operations</h2>
+            <ul>
+            <li><strong>GetCapabilities</strong> (mandatory) - allow clients to retrieve information describing the service instance</li>
+            <li><strong>DescribeRecord</strong> (mandatory) - allows a client to discover elements of the information model supported by the target catalogue service</li>
+            <li><strong>GetRecords</strong> (mandatory) - get metadata records</li>
+            <li><strong>GetRecordById</strong> (optional) - get metadata records by ID</li>
+            <li><strong>GetDomain</strong> (optional) - obtain runtime information about the range of values of a metadata record element or request parameter</li>
+            <li><strong>Harvest</strong> (optional) - references the data to be inserted or updated in the catalog</li>
+            <li><strong>Transaction</strong> (optional) - defines an interface for creating, modifying and deleting catalogue records</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Example Requests</h2>
+            <ul>
+            <li><a href="http://demo.pycsw.org/gisdata/csw?service=CSW&version=2.0.2&request=GetCapabilities">GetCapabilities</a></li>
+            <li><a href="http://demo.pycsw.org/gisdata/csw?service=CSW&version=2.0.2&request=DescribeRecord&TypeName=csw:Record">DescribeRecord</a></li>
+            <li><a href="http://demo.pycsw.org/gisdata/csw?service=CSW&version=2.0.2&request=GetRecords&ElementSetName=full&typenames=csw:Record&resulttype=results">GetRecords</a></li>
+            <!--<li><a href="http://geo.gov.ckan.org/csw?service=CSW&version=2.0.2&request=GetRecords&typenames=csw:Record&elementsetname=full">GetRecords</a></li>-->
+            <li><a href="http://demo.pycsw.org/gisdata/csw?service=CSW&version=2.0.2&request=GetRecordById&ElementSetName=full&Id=urn:uuid:b58db4c2-f765-11e1-bf69-aa0000ae6bfc">GetRecordById</a></li>
+            <li><a href="http://demo.pycsw.org/gisdata/csw?service=CSW&version=2.0.2&request=GetDomain&parametername=GetRecords.resultType">GetDomain</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>pycsw</h2>
+            <ul>
+            <li>pycsw fully implements the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web]</li>
+            <li>pycsw allows for the publishing and discovery of geospatial metadata</li>
+            </ul>
+            
+        </section>
+        
+        <section>
+            <h2>pycsw</h2>
+            <p>
+                The project is certified <a href="http://www.opengeospatial.org/resource/products/details/?pid=1104">OGC Compliant</a>, and is an OGC Reference Implementation
+            </p>
+            <p>
+            <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/Certified_OGC_Compliant_Logo_Web.gif" height="74"/></a>
+            </p>
+            <p>
+            <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/badge.php?s=CAT%20CSW%202.0.2&r=1" height="38"/></a>
+            </p>
+            <p>
+            pycsw is currently under OSGeo Incubation
+            </p>
+            <p>
+            <a title="OSGeo Project in Incubation" href="https://github.com/geopython/pycsw/wiki/OSGeo-Incubation"><img alt="OSGeo Project in Incubation" src="http://svn.osgeo.org/osgeo/marketing/logo/png8/150/OSGeo_incubation.png" height="64"/></a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+            <ul>
+            <li> Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS</li>
+            <li> Implements ISO Metadata Application Profile 1.0.0</li>
+            <li> Implements FGDC CSDGM Application Profile for CSW 2.0</li>
+            <li> Implements INSPIRE Discovery Services 3.0</li>
+            <li> Supports ISO, Dublin Core, DIF, FGDC and Atom metadata models</li>
+            <li> Standalone of embedded deployment (CGI or WSGI)</li>
+            <li> Transactional capabilities (CSW-T)</li>
+            <li> Flexible repository configuration (SQLite, PostgreSQL, PostGIS, MySQL)</li>
+            <li> Federated catalogue distributed searching</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>More features...</h2>
+            <ul>
+            <li> Simple configuration</li>
+            <li> Extensible plugin architecture (profiles, repositories/backends)</li>
+            <li> Seamless integration with Python environments (e.g. GeoNode, Open Data Catalog)</li>
+            <li> Includes commandline utility to administer the metadata repository</li>
+            <li> Implements the Search/Retrieval via URL (SRU) search protocol</li>
+            <li> Implements OpenSearch</li>
+            <li> Realtime XML Schema validation</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Standards Support</h2>
+            <ul>
+            <li> OGC CSW 2.0.2</li>
+            <li> OGC Filter 1.1.0</li>
+            <li> OGC OWS Common 1.0.0</li>
+            <li> OGC OpenSearch Geo/Time</li>
+            <li> OGC GML 3.1.1</li>
+            <li> OGC SFSQL 1.2.1</li>
+            <li> Dublin Core 1.1</li>
+            <li> SOAP 1.2</li>
+            <li> ISO 19115 2003</li>
+            <li> ISO 19139 2007</li>
+            <li> ISO 19119 2005</li>
+            <li> NASA DIF 9.7</li>
+            <li> FGDC CSDGM 1998</li>
+            <li> SRU 1.1</li>
+            <li> A9 OpenSearch 1.1</li>
+            </ul>
+        </section>
+	</section>
+
+	<section>
+	    <section>
+		    <h2>ZOO Project WPS</h2>
+		    <ul>
+				<li>ZOO is a WPS (Web Processing Service) open source project released under a MIT/X-11 style license</li>
+				<li>It provides an OGC WPS compliant developer-friendly framework to create and chain WPS Web services</li>
+		    </ul>
+		    <br/>
+		    <a class="image" href="http://www.zoo-project.org/" target="_blank">
+	        <img width="700" src="imgs/zoo-logo.png">
+	        </a>
+		</section>
+
+		<section>
+		    <h2>ckanext-spatial Features</h2>
+		    <p align="left">ZOO is made of three parts:</p>
+		    <ul>
+				<li>ZOO Kernel: A powerful server-side C Kernel which makes it possible to manage and chain Web services coded in different programming languages</li>
+				<li>ZOO Services: A growing suite of example Web services based on various Open Source libraries</li>
+				<li>ZOO API: A server-side JavaScript API able to call and chain the ZOO Services, which makes the development and chaining processes easier</li>
+		    </ul>
+		</section>
+
+		<section>
+		    <h2>ZOO Overview</h2>
+		    <br/>
+		    <a class="image" href="http://www.zoo-project.org/" target="_blank">
+		      <img width="700" src="imgs/zoo-screen1.png"></a>
+		</section>
+
+		<section>
+		    <h2>ZOO Kernel</h2>
+		    <br/>
+		    <a class="image" href="http://www.zoo-project.org/" target="_blank">
+		      <img width="700" src="imgs/zoo_kernel_scheme.png"></a>
+		</section>
+
+		<section>
+		    <h2>ZOO Demos</h2>
+		    <br/>
+		    <a class="image" href="http://www.zoo-project.org/site/ZooWebSite/Demo/SpatialTools" target="_blank">
+		      <img width="700" src="imgs/zoo-screen2.png"></a>
+		</section>
+
+	</section>
+
+	<section>
+        <h2>Other Geospatial Technologies Involved</h2>
+    </section>
+    
     <section>
         <h2>Thank you for your attention!</h2>
         <br/>
