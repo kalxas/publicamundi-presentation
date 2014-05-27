@@ -636,7 +636,7 @@
 		</section>
 
 		<section>
-		    <h2>ckanext-spatial Features</h2>
+		    <h2>ZOO Overview</h2>
 		    <p align="left">ZOO is made of three parts:</p>
 		    <ul>
 				<li>ZOO Kernel: A powerful server-side C Kernel which makes it possible to manage and chain Web services coded in different programming languages</li>
@@ -665,11 +665,89 @@
 		    <a class="image" href="http://www.zoo-project.org/site/ZooWebSite/Demo/SpatialTools" target="_blank">
 		      <img width="700" src="imgs/zoo-screen2.png"></a>
 		</section>
-
 	</section>
 
 	<section>
-        <h2>Other Geospatial Technologies Involved</h2>
+	    <section>
+		    <h2>Rasdaman</h2>
+		    <ul>
+				<li>Rasdaman ("raster data manager") is a domain-neutral Array Database System: it extends standard relational database systems with the ability to store and retrieve multi-dimensional raster data ( arrays) of unlimited size through an  SQL-style query language.</li>
+				<li>It provides reference implementation of OGC WCS and WCPS interfaces</li>
+				<li>Rasdaman embeds itself smoothly into PostgreSQL</li>
+				<li>The Petascope component of rasdaman provides service interfaces based on the OGC WCS, WCPS, WCS-T, and WPS</li>
+		    </ul>
+		    <br/>
+		    <a class="image" href="http://www.rasdaman.org/" target="_blank">
+	        <img width="300" src="imgs/logo-rasdaman.gif">
+	        </a>
+		</section>
+
+		<section>
+		    <h2>Rasdaman features</h2>
+		    <ul>
+				<li>Rasdaman makes it easy to search in large, multi-dimensional raster data</li>
+				<li>RASQL language</li>
+				<li>Tiling policies</li>
+				<li>Parallel server processing</li>
+				<li>OGC interfaces</li>
+		    </ul>
+		</section>
+
+		<section>
+		    <h2>RASQL</h2>
+		    <p align="left">The rasdaman query language, rasql, offers raster processing formulated through expressions over raster operations in the style of SQL.</p>
+		    <p align="left">Consider the following query: "The difference of red and green channel from all images from collection LandsatImages where somewhere in the red channel intensity exceeds 127"</p>
+		    <pre><code data-trim>
+select ls.red - ls.green
+from LandsatImages as ls
+where max_cells( ls.red ) > 127
+		   	</code></pre>
+		</section>
+
+		<section>
+		    <h2>Rasdaman Demo</h2>
+		    <br/>
+		    <a class="image" href="http://earthlook.org/" target="_blank">
+		      <img width="700" src="imgs/rasdaman-demo.jpg"></a>
+		</section>
+	</section>
+
+	<section>
+		<section>
+	        <h2>Other Geospatial Technologies Involved</h2>
+	    </section>
+	    <section>
+            <h2>PostGIS - Spatial Database</h2>
+            <p><img src="imgs/postgis.png" width="800" height="600" alt="" /></p>
+        </section>
+    	<section>
+            <h2>OpenLayers – Browser Mapping Library</h2>
+            <p><img src="imgs/openlayers.png" width="700" alt="" /></p>
+      	</section>
+      	<section>
+        	<h2>Leaflet – Mobile Friendly Interactive Maps</h2>
+        	<p><img src="imgs/leaflet.png" width="800" height="600" alt="" /></p>
+      	</section>
+      	<section>
+        	<h2>GeoServer – Web Services</h2>
+        	<p><img src="imgs/geoserver.png" width="800" height="600" alt="" /></p>
+      	</section>
+      	<section>
+        	<h2>MapServer – Web Services</h2>
+        	<p><img src="imgs/mapserver.png" width="800" height="600" alt="" /></p>
+        </section>
+      	<section>
+        	<h2>MapProxy – Proxy WMS & tile services</h2>
+        	<p><img src="imgs/mapproxy.png" width="700" alt="" /></p>
+      	</section>
+      	<section>
+            <h2>GDAL/OGR – Geospatial Data Translation Tools</h2>
+            <p><img src="imgs/gdal.png" width="800" height="600" alt="" /></p>
+        </section>
+        <section>
+            <h2>MetaCRS - Coordinate Reference System Transformations</h2>
+            <p><img src="imgs/metacrs.png" width="800" height="600" alt="" /></p>
+        </section>
     </section>
     
     <section>
