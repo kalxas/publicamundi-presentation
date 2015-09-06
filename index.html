@@ -17,35 +17,36 @@
   <body>
     <div class="reveal">
       <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">
+    <div class="slides">
        <!-- <section>
         <a class="image" href="http://publicamundi.eu" target="_blank">
           <img width="1200" src="imgs/pm-back.png"></a>
         </section>-->
         
-        <section>
-          <h1>PublicaMundi</h1>
-          <h3>Scalable and Reusable Open Geospatial Data</h3>
-          <br/>
-          <br/>
-          <a class="image" href="http://publicamundi.eu" target="_blank">
-          <img width="400" src="imgs/publicamundi_logo_full.png">
-          </a>
-          <p style="color:#005b54;"><a href="http://users.ntua.gr/tzotsos/">Dr. Angelos Tzotsos</a>, IMIS Athena</p>
-          <p style="color:#005b54;"> Scientific & Technical Manager</p>
-          <p style="color:#005b54;"> OSGeo Charter Member</p>
-          <br/>
-          <p style="color:#005b54;">GeoDataCamp 2015, Innovathens, 10 Sep 2015</p>
-          <br/>
-          <!--<a class="image" href="http://publicamundi.eu" target="_blank">
-          <img width="800" src="imgs/partners_logos.png">
-          </a>-->
-          <!--p><small><i>Press "s" for slide notes.</i></small></p-->
-          <aside class="notes">
-	    <p>Notes</p>
-          </aside>
-        </section>
-        <!-- Introduction slides -->
+    <section>
+      <h1>PublicaMundi</h1>
+      <h3>Scalable and Reusable Open Geospatial Data</h3>
+      <br/>
+      <br/>
+      <a class="image" href="http://publicamundi.eu" target="_blank">
+      <img width="400" src="imgs/publicamundi_logo_full.png">
+      </a>
+      <p style="color:#005b54;"><a href="http://users.ntua.gr/tzotsos/">Dr. Angelos Tzotsos</a>, IMIS Athena</p>
+      <p style="color:#005b54;"> Scientific & Technical Manager</p>
+      <p style="color:#005b54;"> OSGeo Charter Member</p>
+      <br/>
+      <p style="color:#005b54;">GeoDataCamp 2015, Innovathens, 10 Sep 2015</p>
+      <br/>
+      <!--<a class="image" href="http://publicamundi.eu" target="_blank">
+      <img width="800" src="imgs/partners_logos.png">
+      </a>-->
+      <!--p><small><i>Press "s" for slide notes.</i></small></p-->
+      <aside class="notes">
+    <p>Notes</p>
+      </aside>
+    </section>
+
+    <!-- Introduction -->
 	<section>  
 	  <section>
 	    <h2>Genesis of the project</h2>
@@ -79,8 +80,24 @@
 	    <img width="200" src="imgs/imago_mundi.png">
 	    </a>
 	  </section>
+	  <section>
+	  <h2>Experiences and Problems</h2>
+	    <p>Reoccurring practical problems in open geospatial data reuse:</p>
+	    <br/>
+	    <ul>
+	      <li>Data formats/CRS</li>
+	      <li>Web maps</li>
+	      <li>Interlink</li>
+	      <li>Translations</li>
+	      <li>Publishing</li>
+	      <li>OGC/INSPIRE documents not for all</li>
+	    </ul>
+	    <br/>
+	  </section>
 	</section>
-        <section>
+
+	<!-- Consortium -->
+    <section>
 	  <section>
 	    <h2>Consortium</h2>
 	    <br/>
@@ -112,7 +129,6 @@
 	    </table> 
 	    <br/>
 	  </section>
-	  
 	  <section>
 	    <h2>Athena</h2>
 	    <ul>
@@ -121,7 +137,6 @@
 		<li>Institute for the Management of Information Systems (IMIS)</li>
 	    </ul>
 	  </section>
-	  
 	  <section>
 	    <h2>Rasdaman</h2>
 	    <ul>
@@ -131,7 +146,6 @@
 		<li>Geospatial World Innovation Award (2013)</li>
 	    </ul>
 	  </section>
-	  
 	  <section>
 	    <h2>GeoLabs</h2>
 	    <ul>
@@ -142,7 +156,6 @@
 		<li>Development of the MapMint SDI using WPS, other OGC Web Services and OASIS</li>
 	    </ul>
 	  </section>
-	
 	  <section>
 	    <h2>GET</h2>
 	    <ul>
@@ -153,20 +166,8 @@
 	    </ul>
 	  </section>
 	</section>
-<!--     <section>
-	  <h2>Experiences and Problems</h2>
-	    <p>Reoccurring practical problems in open geospatial data reuse:</p>
-	    <br/>
-	    <ul>
-	      <li>Data formats/CRS</li>
-	      <li>Web maps</li>
-	      <li>Interlink</li>
-	      <li>Translations</li>
-	      <li>Publishing</li>
-	      <li>OGC/INSPIRE documents not for all</li>
-	    </ul>
-	    <br/>
-	</section>  --> 
+
+	<!-- Goals -->
 	<section>
 	  <section>
 	    <h2>Goals</h2>
@@ -184,7 +185,6 @@
 	      <br/>
 	      <img class="image" src="imgs/pm-open.png" width="600" alt="GNU" />
 	  </section>
-	  
 	  <section>
 	    <h2>Goals</h2>
 	      <ul>
@@ -198,28 +198,30 @@
 	  </section>
 	</section>
 	
+	<!-- FOSS -->
 	<section>
 	  <section>
-	    <h2>Free and Open Source <br\> Software (FOSS)</h2>
-	      <br/>
-	      <ul>
-	    <li>PublicaMundi development is based exclusively on the OSGeo stack</li>
-		<li>Based on CKAN open data catalogue</li>
-		<li>PublicaMundi spatially extends CKAN using OGC standards</li>
-	      </ul>
-	      <br/>
-	      <br/>
-	      <table align="center" style="margin: 0px auto;">
+	    <h2>Free and Open Source <br/> Software (FOSS)</h2>
+	    <br/>
+	    <ul>
+	      <li>PublicaMundi development is based exclusively on the OSGeo stack</li>
+		  <li>Based on CKAN open data catalogue</li>
+		  <li>PublicaMundi spatially extends CKAN using OGC standards</li>
+		  <li>Source code, Issue Tracker on <a href="https://github.com/PublicaMundi">GitHub</a> </li>
+	    </ul>
+	    <br/>
+	    <br/>
+	    <table align="center" style="margin: 0px auto;">
 	      <tr>
-		<td>
-		  <img class="image" src="imgs/gnu.png" width="300" alt="GNU" />
-		</td>
-		<td>
-		  <img class="image" src="imgs/oss.jpg" width="290" alt="OSS" />
-		</td>
-            </tr></table>
+          <td>
+            <img class="image" src="imgs/gnu.png" width="300" alt="GNU" />
+		  </td>
+		  <td>
+            <img class="image" src="imgs/oss.jpg" width="290" alt="OSS" />
+		  </td>
+          </tr>
+        </table>
 	  </section>
-	  
 	  <section>
 	    <h2>CKAN</h2>
 	    <p align="left">An abbreviation for “Comprehensive Knowledge Archive Network” </p>
@@ -239,52 +241,52 @@
           <img width="150" src="imgs/ckan.png">
           </a>
 	  </section>
-	  
 	  <section>
-            <h2>Open Source Geospatial Foundation (OSGeo)</h2>
-            <p align="left">Since 2006 A Non Profit Umbrella for:</p>
-            <ul>
-              <li>GeoSpatial Free and Open Source Software</li>
-              <li>Education</li>
-              <li>Open Data</li>
-            </ul>
-            <br/>
-            <table align="center" style="margin: 0px auto;">
+        <h2>Open Source Geospatial <br/> Foundation (OSGeo)</h2>
+        <p align="left">Since 2006 A Non Profit Umbrella for:</p>
+        <ul>
+          <li>GeoSpatial Free and Open Source Software</li>
+          <li>Education</li>
+          <li>Open Data</li>
+        </ul>
+        <br/>
+        <table align="center" style="margin: 0px auto;">
 	      <tr>
-		<td>
-		  <a class="image" href="http://osgeo.org" target="_blank">
+		  <td>
+		    <a class="image" href="http://osgeo.org" target="_blank">
               <!--img width="600" src="imgs/wordle.png"-->
               <img width="300" align="center" src="imgs/osgeo_compass.png" alt="OSGeo">
             </a>
-            </td>
-		
-            </tr></table>
+          </td>
+		  </tr>
+		</table>
       </section> 
-	  
 	  <section>
-            <h2>OSGeoLive</h2>
-            <table align="center" style="margin: 0px auto;">
+        <h2>OSGeoLive</h2>
+        <table align="center" style="margin: 0px auto;">
 	      <tr>
-		<td style="vertical-align:middle">
+		  <td style="vertical-align:middle">
             <a class="image" href="http://live.osgeo.org" target="_blank">
               <img width="500" align="center" src="imgs/osgeo-live.png">
             </a>
-            </td>
-	    <td style="vertical-align:middle">
-	    <a class="image" href="http://kalxas.github.io/OSGeoLive-presentation/#/" target="_blank">
-              <img width="400" align="center" src="imgs/osgeolive_menu.png">
-            </a></td>
-            </table>
-            <ul>
-              <li>GNU/Linux distribution</li>
-              <li>60+ Open Source Geospatial Applications</li>
-              <li>Sample Datasets</li>
-              <li>Consistent Overviews &amp; Quickstarts</li>
-              <li>Translations</li>
-            </ul>
+          </td>
+	      <td style="vertical-align:middle">
+	        <a class="image" href="http://kalxas.github.io/OSGeoLive-presentation/#/" target="_blank">
+            <img width="400" align="center" src="imgs/osgeolive_menu.png">
+            </a>
+          </td>
+        </table>
+        <ul>
+          <li>GNU/Linux distribution</li>
+          <li>60+ Open Source Geospatial Applications</li>
+          <li>Sample Datasets</li>
+          <li>Consistent Overviews &amp; Quickstarts</li>
+          <li>Translations</li>
+        </ul>
       </section>
 	</section>
 	
+	<!-- Architecture -->
 	<section>
 	  <section>
 	    <h2>High level architecture</h2>
@@ -292,38 +294,35 @@
 	    <a class="image" href="http://publicamundi.eu" target="_blank">
 	      <img width="1200" src="imgs/arch_general.png"></a>
 	  </section>
-	  
 	  <section>
-	    <h2>OGC standards and INSPIRE</h2>
-	    <ul>
-		<li>Discovery Services</li>
-		<li>View Services</li>
-		<li>Download Services</li>
-		<li>Processing Services</li>
-	      </ul>
-	      <br/>
-	  </section>
-	  
-	  <section>
-	    <h2>Earth Observation Big Data</h2>
-	    <ul>
-		<li>Integration with rasdaman</li>
-		<li>WCPS and WPS support</li>
-	      </ul>
-	      <br/>
-	  </section>
-	  
-	  
-    </section>
-
-    
-	<section>
-	    <h2>Architecture Overview</h2>
+	    <h2>System Architecture</h2>
 	    <br/>
 	    <a class="image" href="http://publicamundi.eu" target="_blank">
 	      <img width="800" src="imgs/overview_diagram.png"></a>
-	</section>
+	  </section>
+	  <section>
+	    <h2>OGC standards and INSPIRE</h2>
+	    <ul>
+		  <li>Discovery Services</li>
+		  <li>View Services</li>
+		  <li>Download Services</li>
+		  <li>Processing Services</li>
+	    </ul>
+	    <br/>
+	  </section>
+	  <section>
+	    <h2>Earth Observation Big Data</h2>
+	    <ul>
+		  <li>Integration with rasdaman</li>
+		  <li>Integration with ZOO WPS</li>
+		  <li>Raster processing services based on GRASS GIS, OrfeoToolbox, Saga GIS</li>
+		  <li>WCPS and WPS support</li>
+	    </ul>
+	    <br/>
+	  </section>
+    </section>
 
+	<!-- CKAN Intro -->
 	<section>
 	    <section>
 		    <h2>CKAN</h2>
