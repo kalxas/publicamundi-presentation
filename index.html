@@ -747,6 +747,130 @@ where max_cells( ls.red ) > 127
       </section>
     </section>
 
+    <!-- Integration Environment -->
+    <section>
+      <section>
+        <h2>Integration Environment</h2>
+      </section>
+      <section>
+        <h2>Integration Environment</h2>
+        <ul>
+          <li>Beta deployment of software to <a href="http://labs.geodata.gov.gr">labs.geodata.gov.gr</a></li>
+          <li>The servers of the project were installed on the data center of Greek Ministry of Education</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Cloud Environment</h2>
+        <ul>
+          <li>The integration environment of PublicaMundi is deployed on top of the <a href="https://www.synnefo.org/">Synnefo</a> cloud stack, within a number of virtual machines</li>
+          <li><a href="https://www.synnefo.org/">Synnefo</a> is a complete open source cloud stack written in Python that provides Compute, Network, Image, Volume and Storage services, similar to the ones offered by AWS</li>
+          <li><a href="https://www.synnefo.org/">Synnefo</a> is the Open Source project behind <a href="https://okeanos.grnet.gr/home/">Okeanos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Synnefo Services</h2>
+        <p><img src="imgs/synnefo-01.jpg" width="800" height="600" alt="" /></p>
+      </section>
+      <section>
+        <h2>Synnefo Architecture</h2>
+        <p><img src="imgs/synnefo-02.jpg" width="800" height="600" alt="" /></p>
+      </section>
+      <section>
+        <h2>Synnefo UI</h2>
+        <p><img src="imgs/synnefo-03.jpg" width="800" height="600" alt="" /></p>
+      </section>
+      <section>
+        <h2>VM clusters</h2>
+        <p align="left">The software components of PublicaMundi are deployed initially into 8 virtual clusters, with the provision of spinning up more virtual machines into each cluster if necessary.</p>
+        <ul>
+          <li>Database cluster</li>
+          <li>CKAN cluster</li>
+          <li>GeoServer cluster</li>
+          <li>Rasdaman cluster</li>
+          <li>ZOO cluster</li>
+          <li>Proxy/Analytics cluster</li>
+          <li>Tiles/Caching cluster</li>
+          <li>Storage cluster</li>
+        </ul>
+      </section>
+      <section>
+        <h2>GeoServer cluster</h2>
+        <p><img src="imgs/geoserver-cluster.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Monitoring</h2>
+        <p><img src="imgs/haproxy-monitoring.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Deployment</h2>
+        <p align="left">PublicaMundi utilizes Ansible Playbooks in order to deploy software to the integration environment, starting from empty Debian 7 virtual machines, with only network and ssh root access being preconfigured from Synnefo</p>
+        <p><img src="imgs/ansible.jpg" width="400" alt="" /></p>
+      </section>
+    </section>
+
+    <!-- CKAN development -->
+    <section>
+      <section>
+        <h2>CKAN Contributions</h2>
+      </section>
+      <section>
+        <h2>geodata.gov.gr theme</h2>
+        <p><img src="imgs/geodata_theme.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>geodata.gov.gr theme</h2>
+        <p><img src="imgs/geodata_theme1.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>geodata.gov.gr theme</h2>
+        <p><img src="imgs/geodata_theme2.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Publishing Workflow</h2>
+        <ul>
+          <li>Added support for INSPIRE metadata</li>
+          <li>Added support for Geospatial datasets (raster, vector)</li>
+        </ul>
+        <p><img src="imgs/workflow01.jpg" width="500" alt="" /></p>
+      </section>
+      <section>
+        <h2>Metadata Editor</h2>
+        <p><img src="imgs/workflow02.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Administrators Dashboard</h2>
+        <p><img src="imgs/workflow03.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Vector support</h2>
+        <p><img src="imgs/vector.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Vector support</h2>
+        <p><img src="imgs/preview.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Raster support</h2>
+        <p><img src="imgs/raster.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>OGC Web Services</h2>
+        <p><img src="imgs/resources.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Full CSW support</h2>
+        <p><img src="imgs/catalogue_save_as.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Mapping API</h2>
+        <p><img src="imgs/catalogue_save_as.jpg" width="800" alt="" /></p>
+      </section>
+      <section>
+        <h2>Data API</h2>
+        <p><img src="imgs/catalogue_save_as.jpg" width="800" alt="" /></p>
+      </section>
+    </section>
+
     <!-- Workshop/Demo -->
 
     <!-- Thank you -->
